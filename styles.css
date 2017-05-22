@@ -1,0 +1,380 @@
+@media (min-width: 980px) and (max-width: 1440px) {
+
+	html, div, p, body, h1, h2, h3, h4, ul, li, section, i, img {
+		margin: 0;
+		font-family: 'PT Sans', sans-serif;
+	}
+
+
+	.flexDisplay {
+		display: inline-flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: stretch;
+		width: 100%;
+		margin: 0;
+		padding: 0;	
+	}
+
+
+	.links {
+		background-color: #353638;
+		margin: 0;
+		height: 100px;
+	}
+
+	.links img {
+		width: 15%;
+		display: inline;
+	}
+
+	.links p {
+		/*display: inline;*/
+		color: white;
+	}
+	.links .contactInfo {
+		margin: 1% 0;
+		float: right;
+	}
+
+	.links h3 {
+		color: #2956B2;
+	}
+
+
+	/*******************************************************
+		Navigation (Menu Bar)
+	********************************************************/
+
+	.nav {
+		background-color: #2956B2;
+	}
+	.nav ul {
+		background-color: #2956B2;
+		display: inline-flex;
+		flex-wrap: nowrap; /*This ensures that when the viewport changes, the elements won't line-wrap!*/
+		flex-direction: row; /*Makes it in a row. another possible value is column, which makes it as a column. Applied to lists.*/
+		/*justify-content: center;*/
+		width: 100%;
+		padding: 0;
+		justify-content: space-around;
+		align-items: stretch;
+		margin: 0;
+		
+		
+	}
+
+	.nav ul li {
+		list-style-type: none;
+		color: white;
+		margin: 0.33%;
+	}
+
+	.nav ul li a {
+		text-decoration: none;
+		font-size: 100%;
+		margin: 0;
+
+	}
+
+	/*******************************************************
+		Doctor Thebaud Main Homepage Image
+	********************************************************/
+
+	.imgSlideShow {
+		position: relative;
+		background-image: url("images/FrontPage/thumb_IMG_4318_1024.jpg");
+		/*Background image takes up the full width.*/ 
+		background-size: 100%; 
+		background-repeat: no-repeat;
+		height: 570px;
+		opacity: .85;
+	}
+
+	.imgSlideShow h1, h2 {
+		color: black;
+	}
+
+	.imgSlideShow h1 {
+		font-size: 3em;
+		padding-top: 120px;
+	}
+
+	.imgSlideShow h2 {
+		padding-top: 15px;
+		
+	}
+
+	/*******************************************************
+		For Volunteers and For Pharmaceuticals Boxes
+	********************************************************/
+
+	#largeButtons {
+		/*background-color: red;*/
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+	}
+
+
+	#largeButtons ul, li, a {
+		margin: 0;
+		padding-left: 0;
+	}
+
+	#largeButtons li {
+		width: 35%;
+		border: 2px solid white;
+		list-style-type: none;
+		text-align: center;
+		height: 120px;
+		position: relative;
+	}
+
+	#largeButtons ul {
+		position: relative;
+		bottom: 50px;
+	}
+
+	#largeButtons a {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		left: 0;
+	}
+
+	#largeButtons button {
+		background-color: #a9ce00;
+		border: none;
+		padding: 3px;
+		margin-bottom: 5px;
+		height: 30px;
+		width: 75%;
+	}
+
+	#largeButtons li p {
+		display: inline;
+	}
+
+	#largeButtons button:hover {
+		transition-delay: 50ms;
+		background-color: #d6fc2a;
+	}
+
+	/*******************************************************
+		Clinical Trial Boxes
+	********************************************************/
+	html {
+		/*overflow-x: hidden;*/
+	}
+	
+	.newFlexDisplay {
+		position: relative;
+		display: inline-flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: stretch;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		transition-duration: 500ms;	
+	}
+
+	#currentClinTrials {
+		/*width: 100%;*/
+		/*position: relative;*/
+	}
+
+	#currentClinTrials ul, a {
+		margin: 0;
+		padding: 0;
+	}
+
+	#currentClinTrials li {
+		/*position: relative;*/
+		width: 23%;
+		height: 200px;
+		background-color: #2956B2;
+		list-style-type: none;
+		text-align: center;
+		padding: 0;
+		margin: 10px;
+		/*right: 10%;*/
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+#currentClinTrials li:hover {
+	opacity: .7;
+}
+
+
+	/******************************
+		Left and Right Arrow
+		I got the left and right arrow working
+		by having a postition: absolute;,
+		z-index: 99;, top: 70px; width: 1.7%;,
+		and left: 98.3%; (left = 100% - width percentage).
+		left property only applied to the right arrow.
+	******************************/
+	#rightArrow {
+		/*position: relative;*/
+		width: 1.7%;
+		/*position: absolute;*/
+		background-color: #dbdde0;
+		z-index: 99;
+		top: 70px;
+		left: 98.3%;		
+	}
+
+	#leftArrow {
+		/*position: relative;*/
+		width: 1.7%;
+		/*position: absolute;*/
+		background-color: #dbdde0;
+		z-index: 99;
+		top: 70px;
+	}
+	
+	#bipolarDisorder {
+		background-image: url("images/BipolarDisorderAdobeStockPreview.jpg");
+		background-size: cover;
+		background-repeat: no-repeat; 
+	}
+
+	#alzheimers {
+		background-image: url("images/Alzheimers.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;	
+	}
+
+	#schizophrenia {
+		background-image: url("images/Schizophrenia.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;	
+	}
+
+	#Anxiety {
+		background-image: url("images/Anxiety.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;	
+	}
+	#Depression {
+		background-image: url("images/Depression.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;	
+	}
+	#teenSmoking {
+		background-image: url("images/teenSmoking.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;	
+	}
+	#teenDepression {
+		background-image: url("images/teenDepression.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;	
+	}
+	#teenBipolar {
+		background-image: url("images/teenBipolar.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;	
+	}
+
+	/*******************************************************
+		Input Contact Info Section
+	********************************************************/
+
+	#inputContactInfo {
+		height: 300px;
+		width: 100%;
+		background-color: #dbdde0;
+		float: left;
+		margin: 0;
+	}
+
+	#inputContactInfo input, select {
+		display: block;
+		margin: 1%;
+		width: 45%;
+		height: 20px;
+		font-size: 13px;		
+	}
+
+	#inputContactInfo button {
+		background-color: #f4df42;
+		border: none;
+		color: black;
+		padding: 15px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    font-size: 16px;
+	    display: block;
+	    margin-left: 3%;
+	}
+
+	#inputContactInfo button:hover {
+		
+	}
+
+	
+
+	#bottomHomePageLinks li {
+		width: 22%;
+		height: 200px;
+		background-color: #2956B2;
+		list-style-type: none;
+		text-align: center;
+	}
+
+	#allContactInfo {
+		/*position: absolute;*/
+		width: 100%;
+		display: inline-block;
+		background-color: #2cc48a;
+		height: 250px;
+		margin: 0;
+	}
+
+	#googleMap {
+		width: 50%;
+		display: inline-block;
+		float: right;
+		height: 250px;
+		margin: 0;
+	}
+
+
+
+
+	.redFlexDisplay {
+		display: inline-flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: stretch;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 50px;	
+	}
+
+	.redSquare {
+		height: 200px;
+		width: 20%;
+		background-color: maroon;
+		margin: 10px;
+	}
+
+	.redSquare h1 {
+		color: white;
+		font-size: 7em;
+	}
+}
+
+
+
+
+
